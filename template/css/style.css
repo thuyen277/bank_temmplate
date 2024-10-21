@@ -10444,4 +10444,60 @@ body.body_dark .header-menu.header-menu-2 .menu > .nav-item > .nav-link {
   cursor: pointer;
 }
 
+/* snp logo */
+
+.navbar-brand {
+  padding: 0;
+}
+
+.logo-img {
+  max-height: 40px;  /* Adjust this value as needed */
+  width: auto;
+}
+
+@media (max-width: 991px) {
+  .logo-img {
+      max-height: 30px;  /* Slightly smaller on mobile */
+  }
+}
+
+/* dropdown */
+.navbar-nav .form-control {
+  width: 150px;
+}
+
+.nav-item.dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.nav-item.dropdown .fa-chevron-down {
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .form-control {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  
+  .navbar-nav .btn {
+      width: 100%;
+  }
+  
+  .navbar-nav .dropdown-menu {
+      border: none;
+      text-align: center;
+  }
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */
