@@ -10500,4 +10500,190 @@ body.body_dark .header-menu.header-menu-2 .menu > .nav-item > .nav-link {
   align-items: center;
 }
 
+/* carousel */
+.project-area {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.project-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 200%; /* 2 sets of 3 projects */
+}
+
+.project-card {
+  flex: 0 0 calc(16.666% - 20px); /* 1/6 of the total width */
+  width: calc(16.666% - 20px);
+  margin-right: 20px;
+  position: relative;
+  height: 50vh; /* Set height to 50% of the viewport height for desktop */
+  max-height: 500px; /* Set a maximum height to prevent excessive size on large screens */
+  min-height: 300px; /* Set a minimum height to ensure visibility on smaller screens */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 991px) {
+  .project-card {
+      height: 40vh; /* Slightly reduce height for tablets */
+      max-height: 400px;
+      min-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .project-card {
+      height: 30vh; /* Further reduce height for mobile */
+      max-height: 300px;
+      min-height: 200px;
+  }
+}
+
+.project-card:last-child {
+  margin-right: 0;
+}
+
+.project-card .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card .card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 15px;
+}
+
+.project-card .card-title {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.project-card .card-text {
+  font-size: 0.8rem;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.nav-arrow:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.nav-prev {
+  left: 10px;
+}
+
+.nav-next {
+  right: 10px;
+}
+
+.slide-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.slide-track {
+  width: 100px;
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  position: relative;
+}
+
+.slide-thumb {
+  width: 50%; /* Half of the track, as we have 2 slides */
+  height: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: left 0.3s ease;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Adjust main content area */
+main {
+  overflow-x: hidden;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  height: 80px;
+}
+
+footer {
+  height: 200px;
+}
+
 /*# sourceMappingURL=style.css.map */

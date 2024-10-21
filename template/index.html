@@ -40,9 +40,9 @@
     <!-- Header -->
     <header class="header">
         <div class="header-menu header-menu-4" id="sticky">
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand sticky_logo" href="index.html">
+                    <a class="navbar-brand" href="#home">
                         <img src="img/logo/Logo.png" alt="logo" class="logo-img">
                     </a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -105,8 +105,8 @@
 
     <main>
 
-        <!-- banner section -->
-        <section class="banner-area-5" id="banner_animation">
+        <!-- home section -->
+        <section id="home" class="banner-area-5">
             <div class="bg-shapes">
                 <div class="shape" data-parallax='{ "x": -30,"y": 90,"rotateZ":50}'>
                     <img class="layer" data-depth="-0.06" src="img/home-4/shape-2.png" alt="">
@@ -196,8 +196,9 @@
 
 
         <!-- feature section -->
-        <section id="feature" class="steps-area pt-115 pb-105 bg-white">
+        <section id="easy-app" class="steps-area pt-115 pb-105 bg-white">
             <div class="container">
+                <h2 class="text-center mb-5">EASY APP</h2>
                 <div class="row">
                     <div class="col-lg-6 mx-auto  pb-55">
                         <div class="section-title">
@@ -248,8 +249,9 @@
         </section>
         <!-- feature section end-->
 
-        <section class="about-area bg-white">
+        <section id="product" class="about-area bg-white">
             <div class="container">
+                <h2 class="text-center mb-5">PRODUCT</h2>
                 <div class="row align-items-center">
                     <div class="col-lg-7">
                         <div class="cash-img">
@@ -278,111 +280,67 @@
             </div>
         </section>
 
-        <!-- About Area Tab section -->
-        <section class="about-tab-area bg-white">
+        <!-- Project section -->
+        <section id="project" class="project-area bg-light py-5">
             <div class="container">
-                <div>
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="freelancer-tab" data-bs-toggle="tab"
-                                data-bs-target="#freelancer" type="button" role="tab" aria-controls="freelancer"
-                                aria-selected="true">Freelancers</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="startup-tab" data-bs-toggle="tab" data-bs-target="#startup"
-                                type="button" role="tab" aria-controls="startup" aria-selected="false"> SMBs &
-                                Startups</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business"
-                                type="button" role="tab" aria-controls="business" aria-selected="false">Business
-                                Founders</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="micro_business-tab" data-bs-toggle="tab"
-                                data-bs-target="#micro_business" type="button" role="tab" aria-controls="micro_business"
-                                aria-selected="false"> Micro businesses</button>
-                        </li>
-                    </ul>
+                <h2 class="text-center section-heading mb-5">PROJECT</h2>
+                <div class="project-container">
+                    <button class="nav-arrow nav-prev">&lt;</button>
+                    <div class="project-wrapper">
+                        <div class="project-card">
+                            <img src="img/projects/project1.jpg" class="card-img" alt="Project 1">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Digital Banking</h5>
+                                <p class="card-text">Revolutionizing online banking experience for our customers.</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/projects/project2.jpg" class="card-img" alt="Project 2">
+                            <div class="card-overlay">
+                                <h5 class="card-title">SME Loans</h5>
+                                <p class="card-text">Supporting small and medium enterprises with tailored loan products.</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/projects/project3.jpg" class="card-img" alt="Project 3">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Green Financing</h5>
+                                <p class="card-text">Promoting sustainable development through eco-friendly investments.</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/projects/project4.jpg" class="card-img" alt="Project 4">
+                            <div class="card-overlay">
+                                <h5 class="card-title">AI-Powered Analytics</h5>
+                                <p class="card-text">Leveraging artificial intelligence for better financial insights.</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/projects/project5.jpg" class="card-img" alt="Project 5">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Blockchain Integration</h5>
+                                <p class="card-text">Enhancing security and transparency in transactions.</p>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="img/projects/project6.jpg" class="card-img" alt="Project 6">
+                            <div class="card-overlay">
+                                <h5 class="card-title">Financial Education</h5>
+                                <p class="card-text">Empowering communities through financial literacy programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav-arrow nav-next">&gt;</button>
                 </div>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="freelancer" role="tabpanel"
-                        aria-labelledby="freelancer-tab">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="section-title text-start">
-                                    <h1>Access to secure
-                                        <span class="underline-shape">banking</span>
-                                    </h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and the
-                                        typesetting industry. Lorem Ipsum has been industry's</p>
-                                    <a class="read-more" href="#">Get started now <i class="arrow_right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <img class="img-fluid" src="img/home-4/freelance-tab.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="startup" role="tabpanel" aria-labelledby="startup-tab">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="section-title text-start">
-                                    <h1>Manage your cash
-                                        <span class="underline-shape">easily</span>
-                                    </h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and the
-                                        typesetting industry. Lorem Ipsum has been industry's</p>
-                                    <a class="read-more" href="#">Get started now <i class="arrow_right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <img class="img-fluid" src="img/home-4/freelance-tab-2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="section-title text-start">
-                                    <h1>Access to secure
-                                        <span class="underline-shape">banking</span>
-                                    </h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and the
-                                        typesetting industry. Lorem Ipsum has been industry's</p>
-                                    <a class="read-more" href="#">Get started now <i class="arrow_right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <img class="img-fluid" src="img/home-4/freelance-tab.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="micro_business" role="tabpanel" aria-labelledby="micro_business-tab">
-                        <div class="row align-items-center">
-                            <div class="col-lg-5">
-                                <div class="section-title text-start">
-                                    <h1>Manage your cash
-                                        <span class="underline-shape">easily</span>
-                                    </h1>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and the
-                                        typesetting industry. Lorem Ipsum has been industry's</p>
-                                    <a class="read-more" href="#">Get started now <i class="arrow_right"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <img class="img-fluid" src="img/home-4/freelance-tab-2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="slide-indicator"></div>
             </div>
         </section>
-        <!-- About Area Tab end section -->
+        <!-- End project section -->
 
         <!-- Frequently Ask Questions section -->
-        <section class="faq-area-3">
+        <section id="faq" class="faq-area-3">
             <div class="container">
+                <h2 class="text-center mb-5">FAQ</h2>
                 <div class="row gy-lg-0 gy-4">
                     <div class="col-lg-6">
                         <img class="faq-img img-fluid" src="img/home-4/faq-Img.png" alt="">
@@ -493,8 +451,9 @@
         <!-- Frequently Ask Questions section -->
 
         <!-- Service -->
-        <section class="services-area bg-white pt-120 pb-120 wow fadeInUp">
+        <section id="about-us" class="services-area bg-white pt-120 pb-120 wow fadeInUp">
             <div class="container">
+                <h2 class="text-center mb-5">ABOUT US</h2>
                 <div class="section-title mb-45">
                     <span class="short-title-2">_SERVICE COMPARISONS</span>
                     <h1>Our better <span class="underline-shape">services</span></h1>
@@ -579,7 +538,7 @@
         <!-- Service end -->
 
         <!-- what client says section -->
-        <section class="client-area-2 pt-60 pb-60">
+        <section id="contact" class="client-area-2 pt-60 pb-60">
             <div class="container">
                 <div class="section-title">
                     <span class="short-title-2">_Testimonials</span>
@@ -1022,6 +981,7 @@
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/project-scroll.js"></script>
 </body>
 
 </html>
