@@ -195,59 +195,94 @@
         <!-- banner section end-->
 
 
-        <!-- feature section -->
+             <!-- feature section EASYAPP -->
         <section id="easy-app" class="steps-area pt-115 pb-105 bg-white">
             <div class="container">
-                <h2 class="text-center mb-5">EASY APP</h2>
                 <div class="row">
-                    <div class="col-lg-6 mx-auto  pb-55">
+                    <!-- Column 1: Hình ảnh -->
+                    <div class="col-lg-4 d-flex align-items-center justify-content-center">
+                        <div class="image-container">
+                            <img src="phone.jpg" alt="Example Image" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- Column 2: Nội dung text -->
+                    <div class="col-lg-8" >
                         <div class="section-title">
-                            <span class="short-title-2">_OUR PROCESS</span>
-                            <h1 class="wow fadeInUp">3 <span class="underline-shape">steps</span> to follow</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.3s">There are many variations of passages of Lorem
-                                Ipsum available,
-                                but the majority have suffered alteration in some form,</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row gy-xl-0 gy-4">
-                    <div class="col-xl-4 col-md-6">
-                        <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="card-img">
-                                <img src="img/home-4/step-icon-01.svg" alt="feature svg">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto pb-55">
+                                    <h2 class="text-center section-heading mb-5">EASY APP</h2>
+                                    <p class="wow fadeInUp" data-wow-delay="0.3s" style="font-size: 18px;">
+                                        <!-- Text 1: Innovative services -->
+                                        <strong>
+                                            <a href="javascript:void(0)" onclick="toggleText('text1')" style="text-decoration: none; color: #000; font-size: 22px; display: block;">
+                                                Innovative services, superior experience
+                                            </a>
+                                        </strong>
+                                        <div id="text1" style="display: none; margin-top: 10px; padding-left: 15px; text-align: left;">
+                                            - Unified Account Management: Manage multiple currencies and accounts seamlessly<br>
+                                            - Global Transfers: Send and receive money worldwide with ease<br>
+                                            - Transaction Tracking: View detailed transaction history and stay informed<br>
+                                            - Real-time Notifications: Receive instant updates on account activity<br>
+                                            - Cross-border Banking: Enjoy convenient banking services in Hong Kong and Vietnam
+                                        </div>
+                                
+                                        <br>
+                                
+                                        <!-- Text 2: Quick, secure login -->
+                                        <strong>
+                                            <a href="javascript:void(0)" onclick="toggleText('text2')" style="text-decoration: none; color: #000; font-size: 22px; display: block;">
+                                                Quick, secure login
+                                            </a>
+                                        </strong>
+                                        <div id="text2" style="display: none; margin-top: 10px; padding-left: 15px; text-align: left;">
+                                            - Biometric Access: Use Touch ID/Face ID for fast, secure login<br>
+                                            - Pattern Lock: Protect your account with a simple swipe
+                                        </div>
+                                    </p>
+                                </div>
+                                
+                                <!-- JavaScript to toggle visibility -->
+                                <script>
+                                function toggleText(id) {
+                                    var element = document.getElementById(id);
+                                    if (element.style.display === "none") {
+                                        element.style.display = "block";
+                                    } else {
+                                        element.style.display = "none";
+                                    }
+                                }
+                                </script>
+                                
                             </div>
-                            <h4>Apply for loan</h4>
-                            <p>Quis dapibus volutpat condimentum
-                                quam sed non elit sed magna lectus dui interdum facilisi justo
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6">
-                        <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="card-img">
-                                <img src="img/home-4/step-icon-02.svg" alt="feature svg">
+                    
+                            <!-- Row mới có 2 cột chia đều nhau -->
+                            <div class="row">
+                                <!-- Cột 1 -->
+                                <div class="col-md-6 text-center">
+                                    <img src="qr.png" alt="Image 1" class="img-fluid mb-3">
+                                    <a href="#" style="display: inline-block; padding: 12px 20px; background-color: #007bff; color: white; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;">
+                                        Download on the Google Store
+                                    </a>                                
+                                </div>
+                                <!-- Cột 2 -->
+                                <div class="col-md-6 text-center">
+                                    <img src="qr.png" alt="Image 2" class="img-fluid mb-3">
+                                        <a href="#" style="display: inline-block; padding: 12px 20px; background-color: #007bff; color: white; font-size: 16px; font-weight: bold; text-decoration: none; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;">
+                                            Download on the App Store
+                                        </a>
+                                </div>
                             </div>
-                            <h4>Get approved</h4>
-                            <p>Quis dapibus volutpat condimentum
-                                quam sed non elit sed magna lectus dui interdum facilisi justo
-                            </p>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 mx-auto">
-                        <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="card-img">
-                                <img src="img/home-4/step-icon-03.svg" alt="feature svg">
-                            </div>
-                            <h4>Get your money</h4>
-                            <p>Quis dapibus volutpat condimentum
-                                quam sed non elit sed magna lectus dui interdum facilisi justo
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
+        
+        
+        
         <!-- feature section end-->
+
 
         <!-- product section -->
         <section id="product" class="about-area bg-white">
